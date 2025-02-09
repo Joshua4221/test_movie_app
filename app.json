@@ -15,7 +15,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.godfirst.testmovieapp"
     },
     "web": {
       "bundler": "metro",
@@ -43,6 +44,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "f17fcbcd-1d99-4e75-987e-05134b41e806"
+      }
+    },
+    "owner": "godfirst"
   }
 }
