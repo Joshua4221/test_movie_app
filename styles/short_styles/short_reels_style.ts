@@ -1,5 +1,5 @@
 import { Colors } from '@/constants/Colors';
-import { StyleSheet } from 'react-native';
+import { Platform, StyleSheet } from 'react-native';
 
 export const ShortReelsStyle = StyleSheet.create({
   container: {
@@ -21,7 +21,7 @@ export const ShortReelsStyle = StyleSheet.create({
   sidebar: {
     position: 'absolute',
     right: 10,
-    bottom: 170,
+    bottom: Platform.OS === 'android' ? 100 : 170,
     alignItems: 'center',
     gap: 20,
   },
@@ -37,7 +37,7 @@ export const ShortReelsStyle = StyleSheet.create({
 
   bottomInfo: {
     position: 'absolute',
-    bottom: 170,
+    bottom: Platform.OS === 'android' ? 100 : 170,
     left: 10,
     right: 80,
     gap: 12.85,

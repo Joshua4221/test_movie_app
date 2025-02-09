@@ -41,10 +41,10 @@ const Short_Description = ({
         title="Watch Now"
       />
 
-      <VideoProgressBar
+      {/* <VideoProgressBar
         duration={status.durationMillis}
         currentTime={status.positionMillis}
-      />
+      /> */}
     </View>
   );
 };
